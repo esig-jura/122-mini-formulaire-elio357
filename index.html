@@ -18,15 +18,17 @@
 
 <h1>Mini Form</h1>
 <!-- VOTRE FORMULAIRE -->
-<form action="http://kode.ch/getpost">
+<form action="https://kode.ch/getpost/" method="post">
     <h2>Création d'un compte</h2>
+
+    <!-- Champ texte pour email -->
     <label for="email">E-mail</label>
-    <input type="text" id="email">
-    <button>Créer un compte</button>
+    <input type="text" id="email" name="email">
 
-
-
+    <!-- Bouton d'envoi -->
+    <button type="submit">Créer un compte</button>
 </form>
+
 <script src="js/main.js"></script>
 </body>
 </html>
