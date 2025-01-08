@@ -1,59 +1,75 @@
-    <!DOCTYPE html>
-    <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <title>Mini Form</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
-        <!-- CSS -->
-        <link rel="stylesheet" href="./css/normalize.css"> <!-- https://necolas.github.io/normalize.css/ -->
-        <link rel="stylesheet" href="./css/main.css">
-        <!-- FAVICON -->
-        <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
-        <link rel="manifest" href="./img/favicon/site.webmanifest">
+        <!DOCTYPE html>
+        <html lang="fr">
+        <head>
+            <meta charset="UTF-8">
+            <title>Mini Form</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+            <!-- CSS -->
+            <link rel="stylesheet" href="./css/normalize.css"> <!-- https://necolas.github.io/normalize.css/ -->
+            <link rel="stylesheet" href="./css/main.css">
+            <!-- FAVICON -->
+            <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+            <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+            <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+            <link rel="manifest" href="./img/favicon/site.webmanifest">
 
-    </head>
-    <body>
+        </head>
+        <body>
 
-    <h1>Mini Form</h1>
-    <!-- VOTRE FORMULAIRE -->
-    <form action="https://kode.ch/getpost/" method="post">
-        <h2>Création d'un compte</h2>
+        <h1>Mini Form</h1>
+        <!-- VOTRE FORMULAIRE -->
+        <form action="https://kode.ch/getpost/" method="post">
+            <h2>Création d'un compte</h2>
 
-        <ul>
-            <li>
-                <!--Genre -->
-                <div>
-                    <label>
-                        <input type="radio" name="genre" id="femme" value="f"/>
-                        <span> Femme</span>
-                    </label>
+            <ul class="form">
+                <li>
+                    <div>
+                        <!--Genre -->
+                        <label>
+                            <input type="radio" name="genre" id="femme" value="f"/>
+                            <span> Femme</span>
+                        </label>
 
-                    <label>
-                        <input type="radio" name="genre" id="homme" value="h"/>
-                        <span> Homme</span>
-                    </label>
+                        <label>
+                            <input type="radio" name="genre" id="homme" value="h"/>
+                            <span> Homme</span>
+                        </label>
 
-                    <label>
-                        <input type="radio" name="genre" id="nspp" value="n"/>
-                        <span> Ne se prononce pas</span>
-                    </label>
+                        <label>
+                            <input type="radio" name="genre" id="nspp" value="n"/>
+                            <span> Ne se prononce pas</span>
+                        </label>
+                    </div>
 
-                </div>
-            </li>
-        </ul>
+                </li>
+                <li>
+                    <!-- Champ texte pour email -->
+                    <label for="email">E-mail</label>
+                    <input type="text" id="email" name="email">
+                </li>
+                <!-- Mot de passe -->
+                <li>
+                    <label for="password"> Mot de passe</label>
+                    <input type="password" name="password" id="password" required>
+                </li>
 
-        <!-- Champ texte pour email -->
-        <label for="email">E-mail</label>
-        <input type="text" id="email" name="email">
+                <!-- Confirmation du mot de passe -->
+                <li>
+                    <label for="password-confirm">Confirmer mot de passe</label>
+                    <input type="password" name="password-confirm"
+                           id="password-confirm" required>
+                </li>
 
-        <!-- Bouton d'envoi -->
-        <button type="submit">Créer un compte</button>
-    </form>
+                <li>
+                    <!-- Bouton d'envoi -->
+                    <button type="submit">Créer un compte</button>
+                </li>
+            </ul>
 
-    <script src="js/main.js"></script>
-    </body>
-    </html>
+
+        </form>
+        <script src="js/main.js"></script>
+        </body>
+        </html>
 
 
